@@ -1,7 +1,7 @@
 ---
-title: "Add Firearms to Your FireArmory Vault Collection"
+title: "Add Firearms to Your Collection in FireArmory Vault"
 sidebarTitle: "Adding Firearms"
-description: "Step-by-step instructions for adding individual firearms or bulk-importing entries into your FireArmory Vault collection database."
+description: "Step-by-step instructions for adding individual firearms or bulk-importing entries into your FireArmory Vault collection, with field-by-field guidance."
 ---
 
 FireArmory Vault lets you build your collection your way — add firearms one at a time with full detail, or bulk-import a list to get everything into the system quickly and fill in the details later. Either way, the AI engine gets to work the moment you save an entry, organizing and cross-referencing it against your broader collection.
@@ -20,7 +20,7 @@ FireArmory Vault lets you build your collection your way — add firearms one at
     Tap the **+ Add Firearm** button in the top-right corner of the dashboard. A new entry form opens.
   </Step>
   <Step title="Enter name, model, and manufacturer">
-    Fill in the three required fields — **Name**, **Model**, and **Manufacturer**. As you type, the AI begins matching your input against its database and prepares suggestions for the next step.
+    Fill in the three required fields — **Name**, **Model**, and **Manufacturer**. As you type, the AI begins matching your input against its knowledge base and prepares suggestions for the next step.
   </Step>
   <Step title="Review and confirm AI-suggested categories">
     FireArmory Vault displays a summary of AI-suggested fields — category, action type, caliber family, and related metadata. Review each suggestion and accept or override any field as needed.
@@ -69,6 +69,35 @@ Adding optional details improves AI accuracy and makes your collection easier to
 <ParamField path="notes" type="string">
   Any free-form notes about the firearm — provenance, modifications, condition, or other details you want to keep on record.
 </ParamField>
+
+## Bulk-importing firearms
+
+If you already maintain a list of your firearms in a spreadsheet or CSV file, you can import all entries at once instead of adding them one by one.
+
+<Steps>
+  <Step title="Open the Import tool">
+    From your collection dashboard, tap the **⋯** overflow menu in the top-right corner and select **Import Firearms**.
+  </Step>
+  <Step title="Download the CSV template">
+    Tap **Download Template** to get a pre-formatted CSV file with the correct column headers. Open the file in any spreadsheet application to fill it in.
+  </Step>
+  <Step title="Fill in your data">
+    Populate the template with your firearm records. The **Name**, **Model**, and **Manufacturer** columns are required for every row. All other columns are optional — leave them blank if you don't have the data yet.
+  </Step>
+  <Step title="Upload the completed CSV">
+    Save your file and return to the Import screen. Tap **Choose File**, select your completed CSV, and tap **Upload**.
+  </Step>
+  <Step title="Review and confirm">
+    FireArmory Vault parses each row and displays a preview of the entries to be created. Any rows with missing required fields are flagged in red. Correct errors before proceeding or skip flagged rows to import the valid ones first.
+  </Step>
+  <Step title="Run AI organization">
+    Tap **Import & Organize**. FireArmory Vault creates all valid entries and immediately runs AI analysis on each one. Review the AI suggestions from the **Pending Suggestions** banner on your dashboard when the import completes.
+  </Step>
+</Steps>
+
+<Tip>
+  For large collections, break your CSV into batches of 100–200 rows. This keeps the import preview manageable and makes it easier to spot and fix any errors before they multiply across thousands of entries.
+</Tip>
 
 ## Editing an entry
 
