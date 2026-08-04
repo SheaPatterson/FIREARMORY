@@ -1,0 +1,189 @@
+---
+title: "Troubleshooting Common Issues in FireArmory Vault"
+sidebarTitle: "Troubleshooting"
+description: "Solutions for common FireArmory Vault issues: login problems, upload failures, AI not recognizing firearms, app performance, and data sync problems."
+---
+
+Use this guide to diagnose and resolve the most common issues you may encounter while using FireArmory Vault. Each section below walks you through targeted steps for a specific problem. Work through the steps in order — most issues are resolved before the end of the list. If a problem persists after following the steps, contact our support team at [support@firearmoryvault.com](mailto:support@firearmoryvault.com) with the details described in the [Contacting Support](#contacting-support) section below.
+
+---
+
+## Can't Log In
+
+### Forgot your password
+
+<Steps>
+  <Step title="Open the login screen">
+    Navigate to [app.firearmoryvault.com](https://app.firearmoryvault.com) and click **Sign In**. Below the password field, click **Forgot password?**
+  </Step>
+  <Step title="Enter your account email">
+    Type the email address associated with your FireArmory Vault account and click **Send reset link**. Check your inbox — the reset email arrives within a few minutes.
+  </Step>
+  <Step title="Check your spam folder">
+    If the email doesn't appear in your inbox within five minutes, check your spam or junk folder. Add `support@firearmoryvault.com` to your contacts to prevent future filtering.
+  </Step>
+  <Step title="Set a new password">
+    Click the link in the email and follow the prompts to create a new password. Your new password must be at least 12 characters and include a mix of letters, numbers, and symbols.
+  </Step>
+  <Step title="Log in with your new password">
+    Return to the login screen and sign in with your updated credentials. If the link has expired (links are valid for 30 minutes), repeat the process to request a new one.
+  </Step>
+</Steps>
+
+### Two-factor authentication (2FA) code not working
+
+<Steps>
+  <Step title="Check the time on your authenticator app">
+    TOTP-based 2FA codes are time-sensitive. If your device's clock is even slightly out of sync, codes will be rejected. On iOS, go to **Settings → General → Date & Time** and enable **Set Automatically**. On Android, go to **Settings → General Management → Date and Time** and enable **Automatic date and time**.
+  </Step>
+  <Step title="Wait for the next code cycle">
+    TOTP codes refresh every 30 seconds. If a code fails, wait for the next cycle and try the fresh code immediately after it appears.
+  </Step>
+  <Step title="Use a recovery code">
+    If your authenticator app is unavailable, use one of the recovery codes you saved when you first set up 2FA. On the 2FA prompt screen, click **Use a recovery code**, enter the code, and sign in. Recovery codes are single-use — generate a new set under **Settings → Security** after logging in.
+  </Step>
+  <Step title="Contact support if locked out">
+    If you no longer have access to your authenticator or recovery codes, contact [support@firearmoryvault.com](mailto:support@firearmoryvault.com). Our team will verify your identity and help you regain access to your account.
+  </Step>
+</Steps>
+
+### Account locked
+
+<Warning>
+  After multiple failed login attempts, FireArmory Vault automatically locks your account to protect your data. Do not continue attempting to log in — additional attempts will not unlock the account and may extend the lockout period.
+</Warning>
+
+<Steps>
+  <Step title="Wait for the automatic unlock window">
+    Account lockouts automatically lift after 30 minutes of no login attempts. Wait out the period and then try again with the correct credentials.
+  </Step>
+  <Step title="Contact support for immediate access">
+    If you need access urgently, email [support@firearmoryvault.com](mailto:support@firearmoryvault.com) with your account email address and a description of the situation. Support can manually unlock your account after verifying your identity.
+  </Step>
+</Steps>
+
+---
+
+## AI Organization Not Working as Expected
+
+### AI isn't recognizing the manufacturer
+
+- Spell out the manufacturer's full, official name. For example, use **Ruger** rather than **Sturm, Ruger & Co.**, and use **Smith & Wesson** rather than **S&W**. The AI matches against a curated manufacturer database and abbreviated or informal names may not match any entry.
+- Double-check capitalization and spelling. A single typo can prevent a match.
+- If the correct manufacturer still isn't recognized after using the full name, use the **Report unrecognized manufacturer** option on the entry screen to submit it for addition to the database.
+
+### AI suggestions are wrong
+
+- You can edit any field the AI has populated. Open the entry, tap **Edit**, correct the field, and save. Your changes are permanent and will not be overwritten by future AI analysis unless you explicitly request it.
+- If the AI is consistently suggesting incorrect values for a particular firearm, tap **Submit AI Feedback** on the entry screen to flag the issue. This sends the entry details and the incorrect suggestion to our data team for review and model improvement.
+
+### Re-triggering AI analysis on an existing entry
+
+<Steps>
+  <Step title="Open the firearm entry">
+    Tap the entry in your collection list to open the detail view.
+  </Step>
+  <Step title="Enter edit mode">
+    Tap **Edit** in the top-right corner of the screen.
+  </Step>
+  <Step title="Re-analyze with AI">
+    Scroll to the bottom of the edit form and tap **Re-analyze with AI**. The AI will re-process the current field values and update any fields it can confidently populate. Fields you have previously edited manually will be preserved unless you tap **Reset to AI suggestions**.
+  </Step>
+  <Step title="Review and save">
+    Review the updated suggestions, make any additional manual corrections, and tap **Save**.
+  </Step>
+</Steps>
+
+---
+
+## Upload Failed
+
+### File is too large
+
+- The maximum file size per upload is **25 MB**. If your file exceeds this limit, reduce its size before re-uploading.
+- For PDFs, use a PDF compression tool to reduce file size while retaining readability. Aim to keep scanned documents at 150–300 DPI.
+- For images (PNG or JPG), reduce the export resolution in your scanning app or image editor. A resolution of 300 DPI is sufficient for most documents and schematics.
+
+### Unsupported file type
+
+<Warning>
+  FireArmory Vault only accepts **PDF**, **PNG**, and **JPG** files for document and schematic uploads. Files in formats such as HEIC, TIFF, DOCX, or RAW are not supported and will be rejected at upload.
+</Warning>
+
+- Convert your file to a supported format before uploading. Most mobile scanning apps offer an option to export directly as PDF or JPG.
+- If you are uploading a photo taken on an iPhone, note that iOS may save images as HEIC by default. In **Settings → Camera → Formats**, select **Most Compatible** to save new photos as JPG.
+
+### Upload is stuck or not progressing
+
+<Steps>
+  <Step title="Check your internet connection">
+    Verify that your device has a stable internet connection. Switch from Wi-Fi to mobile data (or vice versa) to rule out a network-specific issue.
+  </Step>
+  <Step title="Cancel and retry the upload">
+    Tap **Cancel** on the upload progress indicator, then re-initiate the upload. Temporary server timeouts are often resolved on the second attempt.
+  </Step>
+  <Step title="Restart the app">
+    Close FireArmory Vault completely, reopen it, and navigate back to the entry to try the upload again.
+  </Step>
+  <Step title="Contact support if the issue persists">
+    If uploads continue to fail, email [support@firearmoryvault.com](mailto:support@firearmoryvault.com) with the file type, file size, and your device OS version so the team can investigate.
+  </Step>
+</Steps>
+
+---
+
+## Schematic Not Displaying Correctly
+
+### The schematic viewer is blank
+
+- Confirm that the file uploaded successfully. Open the entry, tap the schematic attachment, and check that the file size shown is greater than 0 KB. A zero-byte file indicates a failed upload.
+- Verify that the source file is not corrupted. Try opening it on your computer with a standard PDF viewer or image viewer before re-uploading.
+- If the file opens correctly on your computer but displays as blank in the app, delete the attachment from the entry and re-upload the file.
+
+<Tip>
+  Before deleting and re-uploading, download the attached file from within FireArmory Vault to confirm you still have a local copy. Use **Entry → Attachments → Download** to save it to your device first.
+</Tip>
+
+### Schematic appears blurry or low resolution
+
+- The viewer displays the schematic at the resolution of the source file. If the uploaded file was low resolution, the viewer cannot sharpen it beyond what the file contains.
+- Locate a higher-resolution version of the schematic — ideally a vector PDF or a raster image at 600 DPI or higher — and re-upload it as a replacement.
+- If you scanned the schematic yourself, rescan it at a higher DPI setting (300 DPI minimum; 600 DPI recommended for fine technical drawings) and upload the new scan.
+
+---
+
+## Collection Not Syncing Across Devices
+
+<Steps>
+  <Step title="Verify the internet connection on both devices">
+    Sync requires an active connection on every device. Confirm that both devices show a working connection — try loading a webpage on each to be sure.
+  </Step>
+  <Step title="Wait a moment and pull to refresh">
+    Open the collection list on the device that appears out of sync, pull down to trigger a manual refresh, and wait up to 60 seconds for the sync to complete.
+  </Step>
+  <Step title="Sign out and sign back in">
+    If a manual refresh doesn't resolve the discrepancy, sign out of FireArmory Vault on the affected device (**Settings → Account → Sign Out**), then sign back in. Signing in forces a full data sync from the server.
+  </Step>
+  <Step title="Update the app on both devices">
+    Ensure that both devices are running the latest version of FireArmory Vault. An outdated version on one device can cause sync incompatibilities. Check your device's app store for available updates.
+  </Step>
+  <Step title="Contact support if data is missing">
+    If entries are genuinely missing after completing the steps above, contact [support@firearmoryvault.com](mailto:support@firearmoryvault.com) immediately. Include your account email, the names of the missing entries, and the date you last saw them. Do not add new entries with the same name until the issue is investigated, as this can complicate data recovery.
+  </Step>
+</Steps>
+
+---
+
+## Contacting Support
+
+If you have worked through the relevant steps above and are still experiencing an issue, the FireArmory Vault support team is ready to help. Email us at [support@firearmoryvault.com](mailto:support@firearmoryvault.com) and include the following information to help us resolve your issue as quickly as possible:
+
+- **Account email address** — the email you use to log in to FireArmory Vault
+- **Device OS and version** — for example, iOS 17.4 or Android 14
+- **App version** — found under **Settings → About**
+- **Description of the issue** — what you expected to happen and what actually happened
+- **Steps you have already tried** — so the support team doesn't ask you to repeat them
+
+<Note>
+  Due to FireArmory Vault's end-to-end encryption, support staff cannot view the contents of your collection, your stored documents, or your schematics. Your data remains private even during a support interaction. Our team can assist you with account access, billing, technical issues, and app behavior — but will never be able to see your personal collection data.
+</Note>

@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "FireArmory Vault",
+  "projectDescription": "An AI-powered firearms collection management platform for securely storing schematics, tracking serial numbers and values, and accessing a built-in caliber wiki — all with end-to-end encryption.",
   "theme": "almond",
-  "name": "FireArmory Vault",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@firearmoryvault.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Open App",
-      "href": "https://app.firearmoryvault.com"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -83,9 +64,13 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/firearmoryvault"
-    }
-  }
+  "keyFeatures": [
+    "AI-powered automatic organization by firearm name, model, and manufacturer",
+    "Secure storage of building blueprints and firearm schematics",
+    "Serial number, purchase date, and estimated value tracking",
+    "Background check and receipt document storage",
+    "Built-in caliber wiki with ballistic data, characteristics, and case images",
+    "End-to-end encryption for complete data privacy"
+  ],
+  "publicApiSurface": []
 }

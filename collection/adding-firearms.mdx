@@ -1,0 +1,94 @@
+---
+title: "Add Firearms to Your FireArmory Vault Collection"
+sidebarTitle: "Adding Firearms"
+description: "Step-by-step instructions for adding individual firearms or bulk-importing entries into your FireArmory Vault collection database."
+---
+
+FireArmory Vault lets you build your collection your way — add firearms one at a time with full detail, or bulk-import a list to get everything into the system quickly and fill in the details later. Either way, the AI engine gets to work the moment you save an entry, organizing and cross-referencing it against your broader collection.
+
+<Info>
+  The more detail you provide when adding a firearm, the better the AI can organize and cross-reference your collection. Even filling in optional fields like caliber and action type meaningfully improves suggestions.
+</Info>
+
+## Adding a single firearm
+
+<Steps>
+  <Step title="Open FireArmory Vault">
+    Launch the app and navigate to your collection dashboard at [app.firearmoryvault.com](https://app.firearmoryvault.com).
+  </Step>
+  <Step title="Tap 'Add Firearm'">
+    Tap the **+ Add Firearm** button in the top-right corner of the dashboard. A new entry form opens.
+  </Step>
+  <Step title="Enter name, model, and manufacturer">
+    Fill in the three required fields — **Name**, **Model**, and **Manufacturer**. As you type, the AI begins matching your input against its database and prepares suggestions for the next step.
+  </Step>
+  <Step title="Review and confirm AI-suggested categories">
+    FireArmory Vault displays a summary of AI-suggested fields — category, action type, caliber family, and related metadata. Review each suggestion and accept or override any field as needed.
+  </Step>
+  <Step title="Save the entry">
+    Tap **Save** to add the firearm to your collection. The entry appears immediately on your dashboard.
+  </Step>
+</Steps>
+
+## Required fields
+
+These three fields are mandatory for every firearm entry. The AI organization engine uses all three to match and categorize your firearm.
+
+<ParamField path="name" type="string" required>
+  The common name or nickname for the firearm (e.g., *Model 29*, *AR-15*, *1911*). This is the primary label displayed on your dashboard.
+</ParamField>
+
+<ParamField path="model" type="string" required>
+  The manufacturer's official model designation (e.g., *Model 686 Plus*, *M&P 9 M2.0*, *Mark IV Target*). Used by the AI to match product-line metadata.
+</ParamField>
+
+<ParamField path="manufacturer" type="string" required>
+  The full manufacturer name (e.g., *Smith & Wesson*, *Ruger*, *Glock*). Use the complete name rather than an abbreviation for the most accurate AI suggestions.
+</ParamField>
+
+## Optional details
+
+Adding optional details improves AI accuracy and makes your collection easier to search and filter.
+
+<ParamField path="caliber" type="string">
+  The cartridge designation (e.g., *.357 Magnum*, *9mm Luger*, *.308 Winchester*). Used to group firearms by caliber family in filters.
+</ParamField>
+
+<ParamField path="action_type" type="string">
+  The firearm's operating mechanism (e.g., *Semi-Automatic*, *Bolt Action*, *Double-Action Revolver*). If left blank, the AI will suggest an action type based on the model.
+</ParamField>
+
+<ParamField path="barrel_length" type="string">
+  The barrel length in inches (e.g., *4.25"*, *18"*). Useful for distinguishing between variants of the same model.
+</ParamField>
+
+<ParamField path="finish" type="string">
+  The surface finish or material (e.g., *Blued*, *Stainless Steel*, *Cerakote FDE*).
+</ParamField>
+
+<ParamField path="notes" type="string">
+  Any free-form notes about the firearm — provenance, modifications, condition, or other details you want to keep on record.
+</ParamField>
+
+## Editing an entry
+
+To update an existing firearm record:
+
+1. Tap the firearm entry on your dashboard to open its detail view.
+2. Tap the **Edit** button in the top-right corner.
+3. Update any fields you want to change.
+4. Tap **Save** to apply your changes.
+
+If you edit the name, model, or manufacturer, the AI automatically re-analyzes the entry and may update its suggestions. Review them before saving.
+
+## Deleting an entry
+
+To remove a firearm from your collection:
+
+1. Open the firearm's detail view.
+2. Tap the **Edit** button, then scroll to the bottom of the form.
+3. Tap **Delete Entry** and confirm when prompted.
+
+<Warning>
+  Deletion is permanent and cannot be undone. Removing a firearm entry also permanently deletes all documents attached to it — including background checks, receipts, and any other uploaded files. Download any documents you need before deleting the entry.
+</Warning>

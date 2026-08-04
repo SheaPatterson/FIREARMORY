@@ -1,0 +1,53 @@
+---
+title: "End-to-End Encryption in FireArmory Vault Explained"
+sidebarTitle: "Encryption"
+description: "FireArmory Vault protects your collection data with end-to-end encryption, ensuring only you can view your firearms records, schematics, and documents."
+---
+
+FireArmory Vault is built around a single principle: your collection data belongs to you and only you. Because firearms records, serial numbers, purchase history, and personal documents are sensitive by nature, every piece of data you store in FireArmory Vault is protected with end-to-end encryption — meaning no one but you can ever read it, including FireArmory Vault staff.
+
+## What is end-to-end encryption?
+
+End-to-end encryption (E2EE) means your data is encrypted on your device before it ever leaves it. When you add a firearm to your vault or upload a document, the app encrypts that information locally using a key derived from your password. Only the encrypted ciphertext is transmitted to FireArmory Vault's servers — the plaintext version never touches them.
+
+When you open the app again, your device uses your password to derive the same key and decrypts the data locally before displaying it to you. At no point in this process does FireArmory Vault hold or see the unencrypted contents of your collection.
+
+## What is encrypted
+
+Every piece of personally identifiable or collection-specific information in your vault is end-to-end encrypted, including:
+
+- Firearm entries (make, model, description, notes)
+- Serial numbers
+- Estimated values and appraisal records
+- Purchase records (price, date, seller)
+- Uploaded documents (background checks, receipts, bills of sale)
+- Schematics and blueprints
+
+<Note>
+  Because of end-to-end encryption, FireArmory Vault staff cannot access your
+  data under any circumstances. Keep your password and recovery codes stored in
+  a safe place — they are the only keys to your vault.
+</Note>
+
+## Encryption in transit and at rest
+
+Your data is protected at every stage of its journey:
+
+- **In transit:** All communication between your device and FireArmory Vault's servers uses TLS (Transport Layer Security). Even if network traffic were intercepted, an attacker would see nothing but encrypted ciphertext.
+- **At rest:** Your encrypted data is stored on servers with AES-256 encryption at the infrastructure level, adding a second layer of protection on top of the end-to-end encryption applied on your device.
+
+Both layers work together to ensure your data remains unreadable outside of your authenticated session.
+
+## What this means for you
+
+End-to-end encryption gives you powerful privacy guarantees, and it comes with one important responsibility:
+
+- **FireArmory Vault staff cannot view your collection.** If you submit a support request, support agents can see your account metadata (email address, subscription status) but never the contents of your vault.
+- **If you forget your password and have no recovery codes, your data cannot be recovered.** Because FireArmory Vault never holds your decryption key, there is no "reset and restore" path. Always keep your recovery codes accessible.
+- **Exporting your data produces an encrypted archive** that requires your password or a recovery code to open.
+
+<Info>
+  The caliber wiki is publicly available reference data and is not encrypted
+  per-user — it is the same for every FireArmory Vault user. Only your personal
+  collection records, documents, and custom notes are end-to-end encrypted.
+</Info>

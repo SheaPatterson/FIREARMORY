@@ -1,0 +1,114 @@
+---
+title: "Secure Your FireArmory Vault Account"
+sidebarTitle: "Account Security"
+description: "Best practices for keeping your FireArmory Vault account secure: strong passwords, two-factor authentication, session management, and recovery codes."
+---
+
+Your FireArmory Vault account is the gateway to sensitive information — serial numbers, purchase records, legal documents, and a complete inventory of your firearms collection. Protecting that account is not just good practice; it is a responsibility. This page walks you through every security control FireArmory Vault provides and how to use each one effectively.
+
+## Password requirements
+
+FireArmory Vault enforces a minimum password standard to protect your account:
+
+- At least **12 characters** in length
+- At least one **uppercase letter**
+- At least one **lowercase letter**
+- At least one **number**
+- At least one **special character** (e.g., `!`, `@`, `#`, `$`)
+
+Meeting the minimum is a floor, not a goal. Because your vault contains uniquely sensitive data, use a long, randomly generated passphrase or password. A **password manager** is the most reliable way to generate and store a strong, unique password for FireArmory Vault — never reuse a password from another service.
+
+## Two-factor authentication (2FA)
+
+Two-factor authentication adds a second layer of verification at sign-in, ensuring that a stolen password alone is not enough to access your vault. Enable 2FA as soon as you create your account.
+
+<Steps>
+  <Step title="Open Settings">
+    In the FireArmory Vault app, tap the **Settings** icon in the bottom navigation bar.
+  </Step>
+  <Step title="Navigate to Security">
+    Select **Security** from the Settings menu.
+  </Step>
+  <Step title="Open Two-Factor Authentication">
+    Tap **Two-Factor Authentication** to open the 2FA setup screen.
+  </Step>
+  <Step title="Choose your method">
+    Select either **Authenticator App** (recommended) or **SMS**. An authenticator app such as Google Authenticator, Authy, or 1Password generates codes offline and is significantly more resistant to SIM-swapping attacks than SMS.
+  </Step>
+  <Step title="Scan the QR code">
+    If you chose an authenticator app, open your app, add a new account, and scan the QR code displayed on screen.
+  </Step>
+  <Step title="Enter the verification code">
+    Type the six-digit code from your authenticator app (or the SMS code) into the verification field in FireArmory Vault.
+  </Step>
+  <Step title="Save your 2FA settings">
+    Tap **Enable Two-Factor Authentication** to confirm. 2FA is now active on your account.
+  </Step>
+</Steps>
+
+> **Recommendation:** Always use an authenticator app rather than SMS. SMS-based 2FA is vulnerable to SIM-swapping attacks; an authenticator app stores your codes locally and works even without a cellular signal.
+
+## Recovery codes
+
+Recovery codes are single-use backup codes that let you access your account if you ever lose your 2FA device. Each code can be used only once, after which it is invalidated.
+
+Generate your recovery codes immediately after enabling 2FA:
+
+<Steps>
+  <Step title="Open Settings">
+    Tap **Settings** in the FireArmory Vault app.
+  </Step>
+  <Step title="Navigate to Security">
+    Select **Security** from the Settings menu.
+  </Step>
+  <Step title="Open Recovery Codes">
+    Tap **Recovery Codes**. FireArmory Vault will generate a set of one-time-use codes.
+  </Step>
+  <Step title="Save your codes">
+    Copy or download your recovery codes immediately. FireArmory Vault will not show them again after you leave this screen.
+  </Step>
+</Steps>
+
+<Warning>
+  If you lose access to your 2FA device and do not have recovery codes, you
+  will need to complete identity verification to regain access to your account.
+  This process can take **several business days** and may require documentation.
+  Do not skip this step — store your recovery codes as soon as you generate
+  them.
+</Warning>
+
+<Tip>
+  Print your recovery codes and store them alongside your other important
+  documents in a secure physical location, such as a safe or lockbox. A digital
+  copy in your password manager is also a good secondary backup.
+</Tip>
+
+## Managing active sessions
+
+FireArmory Vault lets you see every device and session currently signed in to your account. Review this list regularly and revoke any session you do not recognize.
+
+<Steps>
+  <Step title="Open Settings">
+    Tap **Settings** in the FireArmory Vault app.
+  </Step>
+  <Step title="Navigate to Security">
+    Select **Security** from the Settings menu.
+  </Step>
+  <Step title="Open Active Sessions">
+    Tap **Active Sessions** to see a list of all signed-in devices, including device type, approximate location, and last activity time.
+  </Step>
+  <Step title="Revoke a session">
+    Tap any session and select **Revoke Access** to sign that device out immediately. To sign out of all devices at once, tap **Revoke All Sessions**.
+  </Step>
+</Steps>
+
+## Recognizing suspicious activity
+
+FireArmory Vault sends an email notification whenever a new device signs in to your account. If you receive a notification for a sign-in you did not initiate, act immediately:
+
+1. **Change your password** — go to **Settings → Security → Change Password** and set a new, strong password. This invalidates all existing sessions.
+2. **Revoke all active sessions** — go to **Settings → Security → Active Sessions** and tap **Revoke All Sessions** to force every device to sign out.
+3. **Review your recovery codes** — if your codes may have been exposed, generate a new set from **Settings → Security → Recovery Codes**. Existing codes are invalidated when you regenerate.
+4. **Contact support** — reach out to the FireArmory Vault support team at [app.firearmoryvault.com](https://app.firearmoryvault.com) to report the incident. Support can flag your account for additional monitoring and assist with a full security review.
+
+Treat any unrecognized sign-in as a serious event. Because your vault contains firearms inventory data, unauthorized access has real-world implications beyond a typical account breach.
