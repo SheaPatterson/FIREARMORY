@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "maple",
   "name": "FireArmory Vault",
   "colors": {
     "primary": "#ffaa28",
@@ -100,7 +100,20 @@
       "display": "interactive"
     },
     "examples": {
-      "autogenerate": true
+      "autogenerate": false
     }
+  },
+  "contextual": {
+    "options": [
+      "view",
+      "download-pdf",
+      "download-spec",
+      "chatgpt",
+      "mcp",
+      "add-mcp",
+      "cursor",
+      "aistudio"
+    ],
+    "display": "header"
   }
 }
