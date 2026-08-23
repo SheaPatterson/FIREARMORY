@@ -49,8 +49,30 @@
           "security/encryption"
         ]
       },
+      {
+        "group": "collection",
+        "pages": [
+          "collection/adding-firearms",
+          "collection/ai-organization",
+          "collection/documents",
+          "collection/overview",
+          "collection/serial-numbers"
+        ]
+      },
+      {
+        "group": "schematics",
+        "pages": [
+          "schematics/overview",
+          "schematics/uploading",
+          "schematics/viewing"
+        ]
+      },
       "index",
-      "faq"
+      "faq",
+      "AGENTS",
+      "quickstart",
+      "introduction",
+      "troubleshooting"
     ]
   },
   "footer": {
