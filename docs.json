@@ -26,7 +26,14 @@
     }
   },
   "navigation": {
-    "groups": []
+    "groups": [
+      {
+        "group": "Changelog",
+        "pages": [
+          "changelog/overview"
+        ]
+      }
+    ]
   },
   "footer": {
     "socials": {
