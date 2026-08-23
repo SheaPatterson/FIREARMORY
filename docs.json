@@ -26,62 +26,7 @@
     }
   },
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "account-setup"
-            ]
-          },
-          {
-            "group": "Collection Management",
-            "pages": [
-              "collection/overview",
-              "collection/adding-firearms",
-              "collection/ai-organization",
-              "collection/serial-numbers",
-              "collection/documents"
-            ]
-          },
-          {
-            "group": "Schematics & Blueprints",
-            "pages": [
-              "schematics/overview",
-              "schematics/uploading",
-              "schematics/viewing"
-            ]
-          },
-          {
-            "group": "Caliber Wiki",
-            "pages": [
-              "wiki/overview",
-              "wiki/ballistic-data",
-              "wiki/caliber-comparison"
-            ]
-          },
-          {
-            "group": "Security & Privacy",
-            "pages": [
-              "security/encryption",
-              "security/data-storage",
-              "security/account-security"
-            ]
-          },
-          {
-            "group": "Help",
-            "pages": [
-              "faq",
-              "troubleshooting"
-            ]
-          }
-        ]
-      }
-    ]
+    "groups": []
   },
   "footer": {
     "socials": {
